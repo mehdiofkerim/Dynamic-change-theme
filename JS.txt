@@ -1,0 +1,11 @@
+const colorBtn = document.querySelectorAll('.btn')
+
+colorBtn.forEach(e =>{
+
+    e.addEventListener('click' , function (e){
+        // console.log(e.target.dataset.color)
+        let colorChange = e.target.dataset.color
+        document.documentElement.style.setProperty('--theme-color' , colorChange)
+    })
+    
+})
